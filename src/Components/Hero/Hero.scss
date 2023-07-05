@@ -1,0 +1,263 @@
+.hero{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  
+    padding: 15px 70px 15px 10px;
+    width: 1200px;
+
+    h4{
+        color: #3D3D3D;
+        font-size: 18px;
+        font-family: Cera Pro;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        margin: 14px 1px 15px 18px;
+    }
+    .categoris{
+
+        width: 310px;
+        height: 774px;
+        
+        background: #FBFBFB;
+        // background: grey;
+        // margin: 10px 10px 10px 10px;
+        position: relative;
+        margin-left: 430px;
+
+
+        span{
+            color: #3D3D3D;
+            font-size: 15px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            display: inline-block;
+            text-align: start;
+            padding-bottom: 5px;
+            margin: 0px 0px -10px 35px;
+            // margin-right: 35px; 
+            
+        }
+
+        p{
+            margin:-30px 30px 1px 80px;/* margin-left o'chirib tashlandi */
+            color: #3D3D3D;
+            text-align: right;
+            font-size: 15px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            // margin-top: 20px; 
+            display: block; 
+        }
+        span:hover , p:hover{
+            color: #46A358;
+            // margin: 12px 1px 1px 28px;
+
+        }
+    }
+    @media (max-width: 1440px){
+        .categoris {
+            position: static;
+            width: 310px;
+            height: 774px;
+            margin-left: 0;
+        }
+    }
+
+
+    .price-range {
+
+        .price_name{
+            margin: 14px 1px 15px 18px;
+            color: #3D3D3D;
+            font-size: 18px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+        }
+        .range-slider {
+            display: flex;
+            gap: 0px;
+            flex-direction: column;
+          input[type="range"] {
+            width: 161px;
+            height: 4px;
+            margin-left: 36px;
+            -webkit-appearance: none;
+            border: none;
+            background-color: transparent;
+            
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                height: 15px;
+                width: 15px;
+                border-radius: 15px;
+                border: 3px solid #FFF;
+                background: #46A358;
+                cursor: pointer;
+            }
+            &::-moz-range-thumb {
+                height: 150px;
+                width: 25px;
+                border: none;
+                border-radius: 50%;
+                background: #fff;
+                cursor: pointer;
+            }
+
+            &:first-child {
+                border-right: 1px solid #000;
+                // position: absolute;
+                z-index: 1;
+            }
+          }
+          .slider-track + input[type="range"] {
+            margin-top: 10px;
+          }
+        }
+        
+        .price-values {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+            
+          p{
+            font-weight: bold;
+            color: #46A358;
+            font-size: 15px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            margin: 0px 10px 0px 30px;
+          }
+
+          span{
+            flex-direction: column;
+            width: 100px;
+            font-weight: bold;
+            color: #46A358;
+            font-size: 15px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            margin: 0px 140px 0px -30px;
+          }
+        }
+
+        .filter{
+            width: 90px;
+            height: 35px;
+            flex-shrink: 0;
+            border-radius: 6px;
+            background: #46A358;
+            margin: 7px 10px 0px 30px;
+
+            span{
+                color: #FFF;
+                font-size: 16px;
+                font-family: Cera Pro;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+                margin: 5px 10px 0px 10px;
+            }
+        }
+    }
+    .size{
+
+        .size_name{
+            margin: 20px 1px 20px 20px;
+            color: #3D3D3D;
+            font-size: 18px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+        }
+
+        p{
+            color: #3D3D3D;
+            font-size: 15px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+            color: #3D3D3D;
+            text-align: start;
+            padding-bottom: 5px;
+            margin: 0px 0px -10px 35px;
+            display: block;
+        }
+
+        span{
+            color: #3D3D3D;
+            text-align: right;
+            font-size: 15px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+            margin:-45px 30px 1px 80px;/* margin-left o'chirib tashlandi */
+            
+            display: block; 
+        }
+    }
+
+    .sales{
+        width: 310px;
+        height: 470px;
+        // background: grey;
+        background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
+        margin: -20px 0px 10px 0px;
+
+        h4{
+            color: #46A358;
+            font-size: 65px;
+            font-family: Hanging Letters;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 65px;
+            margin: 18px 0px 0px 15px;
+        }
+        p{
+            color: #3D3D3D;
+            text-align: center;
+            font-size: 23px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+            margin: 20px 0px -14px 0px;
+        }
+        span{
+            width: 45px;
+            height: 45px;
+            flex-shrink: 0;
+            border-radius: 29px;
+            // background: #000;
+            margin: 0px 0px 80px -40px;
+            background: linear-gradient(145deg, rgba(70, 163, 88, 0.30) 0%, rgba(70, 163, 88, 0.00) 100%);
+        }
+
+        img{
+            width: 370px;
+            height: 370px;
+            flex-shrink: 0;
+            align-items: start;
+            margin: 20px -60px 10px -17px;
+            // background:linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%) 50% / cover no-repeat;
+            // background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
+        }
+        
+    }
+    
+
+}
