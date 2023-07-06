@@ -137,7 +137,7 @@ const Hero = () => {
                 <h4>Super Sale</h4>
                 <p>Up to 75% off</p>
                 <img src={sale_flower} alt='sale_flower' />
-                <span></span>
+                {/* <span></span> */}
             </div>
         </div>
     </div>

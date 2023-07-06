@@ -4,7 +4,7 @@
     justify-content: start;
   
     padding: 15px 70px 15px 10px;
-    width: 1200px;
+    // width: 1200px;
 
     h4{
         color: #3D3D3D;
@@ -24,7 +24,8 @@
         // background: grey;
         // margin: 10px 10px 10px 10px;
         position: relative;
-        margin-left: 430px;
+        margin-inline-start: 195px;
+        // margin-left: 430px;
 
 
         span{
@@ -56,6 +57,7 @@
         }
         span:hover , p:hover{
             color: #46A358;
+            cursor: pointer;
             // margin: 12px 1px 1px 28px;
 
         }
@@ -243,7 +245,6 @@
             flex-shrink: 0;
             border-radius: 29px;
             // background: #000;
-            margin: 0px 0px 80px -40px;
             background: linear-gradient(145deg, rgba(70, 163, 88, 0.30) 0%, rgba(70, 163, 88, 0.00) 100%);
         }
 
@@ -252,7 +253,7 @@
             height: 370px;
             flex-shrink: 0;
             align-items: start;
-            margin: 20px -60px 10px -17px;
+            margin: 20px -60px 10px 0px;
             // background:linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%) 50% / cover no-repeat;
             // background: linear-gradient(180deg, rgba(70, 163, 88, 0.10) 0%, rgba(70, 163, 88, 0.03) 100%);
         }

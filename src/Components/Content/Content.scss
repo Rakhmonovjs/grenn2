@@ -1,9 +1,51 @@
 .content{
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   
-    // padding: 15px 70px 15px 10px;
-    // width: 900px;
+    padding: 15px 0px 15px 10px;
+    width: 900px;
+
+    .names{
+        display: flex;
+        position: relative;
+        top: -810px;
+        margin-inline-start: 440px;
+
+        ul{
+            // width: 2rem;
+            display: flex;
+            h4{
+                color: #3d3d3d;
+            font-size: 15px;
+            font-family: Cera Pro;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+            margin: 10px 10px 10px 10px;
+            }
+        }
+
+        h4:hover {
+            color: #46A358;
+            cursor: pointer;
+        }
+        .activeTitle{
+            color: #46A358;
+            cursor: pointer;
+            padding-bottom: 3px;
+            border-bottom: 3px solid #46a358;
+            font-weight: 700;
+        }
+
+    }
+    @media (max-width: 1440px){
+        .names {
+            position: relative;
+            margin-left: 40px;
+        }
+    }
+
+    
 
 }
