@@ -7,7 +7,9 @@ import aluminum from '../../assets/flowers/aluminum.png'
 import birds from '../../assets/flowers/birds.png'
 import chines from '../../assets/flowers/chines.png'
 import broad from '../../assets/flowers/broad.png'
-
+import korzina from '../../assets/korzina.png'
+import like from '../../assets/like.png'
+import search from '../../assets/search.png'
 
 
 import React, { useState } from 'react'
@@ -58,6 +60,11 @@ const Content = () => {
               {flowersData.map((flower) => (
                 <div className="flowers_card" key={flower.id}>
                     <img src={flower.img} alt="#" />
+                    <div className='icons'>
+                      <img src={korzina} alt="#" />
+                      <img src={like} alt="#" />
+                      <img src={search} alt="#" />
+                    </div>
                   <div className="flowers_texts">
                     <p className="title">{flower.name}</p>
                     <span className="price">{flower.price}</span>

@@ -75,6 +75,7 @@
             width: 258px;
             height: 350px;
             flex-shrink: 0;
+            transition: transform 0.3 ease;
 
             img{
             
@@ -84,36 +85,37 @@
                 height: 250px;
                 // background:lightgray 50% / cover no-repeat;
                 cursor: pointer;
-                position: relative;
-
-                &:hover::before {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 40px;
-                    height: 40px;
-                    // background-image: url("path/to/cart-icon.png"); /* Sizning savatcha ikon rasm manzilingiz */
-                    background-size: cover;
-                  }
+                transition: transform 0.3 ease;
                 
-                  &:active::before {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 40px;
-                    height: 40px;
-                    // background-image: url("path/to/magnifying-glass-icon.png"); /* Sizning lupa ikon rasm manzilingiz */
-                    background-size: cover;
-                  }
+                &:hover{
+                    transform: scale(0.9);
+
+                }
             
                 }
+                    .icons{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: -20px 10px 0px 10px ;
+                        // flex-direction: column;
+                        opacity: 0;
+                        transition: 0.6s;
+
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            margin: 15px 10px 15px 15px;
+                            // font-size: ;
+                        }
+                    }
+
+                    .icons:hover{
+                        opacity: 1;
+                    }
 
                 .flowers_texts{
-                    margin: 5px 0px 5px 30px;
+                    margin: -5px 0px 5px 30px;
 
                 }
 
@@ -134,10 +136,11 @@
                     font-weight: 700;
                     line-height: 16px;
                 }
-        }
+            }
+            
         @media (max-width: 1440px){
             .flowers_card {
-                flex-basis: calc(33% - 10px);
+                flex-basis: calc(33% - 15px);
                 margin: 20px 10px 45px 5px;
                 img{
                     margin: 10px 0px 15px;
