@@ -40,6 +40,14 @@ const Content = () => {
     { name: "Chinese Evergreen", price: "$39.00", id: 9, img: chines },
   ];
 
+    const [cartItems, setCartItems] = useState([]);
+  
+    const addToCart = (product) => {
+      setCartItems([...cartItems, product]);
+    };
+  
+
+
   return (
     <>
     <div className='content' >
@@ -61,7 +69,10 @@ const Content = () => {
                 <div className="flowers_card" key={flower.id}>
                     <img src={flower.img} alt="#" />
                     <div className='icons'>
-                      <img src={korzina} alt="#" />
+                      <div>
+                        <button onClick={() => addToCart(product)}><img src={korzina} alt="#" /></button>
+                      </div>
+                      
                       <img src={like} alt="#" />
                       <img src={search} alt="#" />
                     </div>
